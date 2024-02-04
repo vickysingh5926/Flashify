@@ -30,7 +30,7 @@ const toogledetail=(post)=>{
 }
 
   useEffect(()=>{
- fetch(`http://localhost:5000/user/${JSON.parse(localStorage.getItem("detail"))._id}`,{
+ fetch(`https://instagrambackend-ypjm.onrender.com/user/${JSON.parse(localStorage.getItem("detail"))._id}`,{
   headers:{
     "Authorization":"Bearer "+localStorage.getItem("jwt")
   }

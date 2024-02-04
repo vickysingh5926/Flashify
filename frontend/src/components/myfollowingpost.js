@@ -20,7 +20,7 @@ const navigate=useNavigate();
     }
 
     // fetch post 
-    fetch("http://localhost:5000/myfollowingpost",{
+    fetch("https://instagrambackend-ypjm.onrender.com/myfollowingpost",{
       headers:{
         "Authorization":"Bearer "+localStorage.getItem('jwt')
       }
@@ -46,7 +46,7 @@ const tooglecomment=(post)=>{
   }
 }
 const likepost=(id)=>{
-  fetch('http://localhost:5000/like',{
+  fetch('https://instagrambackend-ypjm.onrender.com/like',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -72,7 +72,7 @@ const likepost=(id)=>{
   })
 }
 const unlikepost=(id)=>{
-  fetch('http://localhost:5000/unlike',{
+  fetch('https://instagrambackend-ypjm.onrender.com/unlike',{
     method:"put",
     headers:{
       "Content-Type":"application/json",
@@ -100,7 +100,7 @@ const unlikepost=(id)=>{
 }
 
 const makecomment=(val,id)=>{
-  fetch('http://localhost:5000/comment',{
+  fetch('https://instagrambackend-ypjm.onrender.com/comment',{
     method:"put",
     headers:{
       "Content-Type":"application/json",

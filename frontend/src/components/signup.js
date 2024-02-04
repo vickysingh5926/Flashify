@@ -23,7 +23,7 @@ else if(!passwordregex.test(password)){
   notifyA("Password must contain atleast 8 characters,including atleast 1 numeric value, 1 lowercase(a-z),1 uppercase(A-Z) and 1 special character")
 return
 }
-  fetch("http://localhost:5000/signup",{
+  fetch("https://instagrambackend-ypjm.onrender.com/signup",{
     method:"post",
     headers:{"Content-Type":"application/json"},
     body:JSON.stringify({

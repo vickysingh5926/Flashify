@@ -32,7 +32,7 @@ function postdetail(){
       },[image])
 
       const postpic=()=>{
-              fetch("http://localhost:5000/uploadprofilepic",{
+              fetch("https://instagrambackend-ypjm.onrender.com/uploadprofilepic",{
             method:"put",
             headers:{
               "Content-Type":"application/json",
